@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Table and Form Demo</title>
+        <style>
+            table tr:nth-child(2n){
+                background-color: aqua;
+            }
+        </style>
+    </head>
+    <body>
+        <header></header>
+        <main>
+            <!-- Demo 01: Basic table -->
+            <table border="1" width="100%">
+                <!-- Header -->
+                <thead>
+                    <tr>
+                        <th>Company</th>
+                        <th>Contact</th>
+                        <th>Country</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>FPT</td>
+                        <td>Hanoi</td>
+                        <td>VN</td>
+                    </tr>
+                    <tr>
+                        <td>Sony</td>
+                        <td>Tokyo</td>
+                        <td>Japan</td>
+                    </tr>
+                </tbody>
+            </table>
+            <!-- Cach 2 -->
+            <table border="2" width="100%">
+                <tr>
+                    <th>Company</th>
+                    <th>Contact</th>
+                    <th>Country</th>
+                </tr>
+                <tr>
+                    <td>FPT</td>
+                    <td>Hanoi</td>
+                    <td>VN</td>
+                </tr>
+                <tr>
+                    <td>Sony</td>
+                    <td>Tokyo</td>
+                    <td>Japan</td>
+                </tr>
+                <tr>
+                    <th>Company</th>
+                    <th>Contact</th>
+                    <th>Country</th>
+                </tr>
+            </table>
+            <hr />
+            <!-- Colspan and rowspan -->
+            <table border="1px" width="100%">
+                <tr>
+                    <th>Quý</th>
+                    <th>Tháng</th>
+                    <th>Doanh thu</th>
+                </tr>
+                <tr>
+                    <td rowspan="3">Mot</td>
+                    <td>Mot</td>
+                    <td>$100</td>
+                </tr>
+                <tr>
+                    <td>Hai</td>
+                    <td>$80</td>
+                </tr>
+                <tr>
+                    <td>Ba</td>
+                    <td>$80</td>
+                </tr>
+                <tr>
+                    <td rowspan="3">Hai</td>
+                    <td>Bon</td>
+                    <td>$100</td>
+                </tr>
+                <tr>
+                    <td>Nam</td>
+                    <td>$80</td>
+                </tr>
+                <tr>
+                    <td>Sau</td>
+                    <td>$80</td>
+                </tr>
+                <tr>
+                    <td colspan="3">Tong: $520</td>
+                </tr>
+            </table>
+        </main>
+        <footer></footer>
+    </body>
+</html>

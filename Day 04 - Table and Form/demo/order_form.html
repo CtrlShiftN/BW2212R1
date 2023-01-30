@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Form</title>
+</head>
+<body>
+    <h2>Order Form</h2>
+    <form action="" method="post">
+        <p>What would you like to buy?</p>
+        <select name="product">
+            <option value="A">A</option>
+            <option value="B">B</option>
+            <option value="C">C</option>
+            <option value="D">D</option>
+        </select>
+        <p>How many would you like to order?</p>
+        <input type="radio" name="amount" value="1 - $10"> 1 - $10 <br>
+        <input type="radio" name="amount" value="2 - $20"> 2 - $20 <br>
+        <input type="radio" name="amount" value="3 - $25"> 3 - $25
+        <p>Name <sup>*</sup></p>
+        <input type="text" name="firstname" required placeholder="FirstName">
+        <input type="text" name="lastname" required placeholder="LastName">
+        <p>Email</p>
+        <input type="email" name="email">
+        <p>Phone Number</p>
+        <input type="number" name="tel01"> - <input type="number" name="tel02"> - <input type="number" name="tel03"> 
+        <br>
+        <input type="submit" value="Submit">
+    </form>
+
+</body>
+</html>
