@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS for Table</title>
+    <style>
+        .container {
+            margin: auto;
+            padding-left: 10%;
+            padding-right: 10%;
+            padding-top: 20px;
+        }
+        #student-list {
+            border-spacing: 0;
+            width: 50%;
+        }
+        #student-list tr td,th {
+            border: 1px solid red;
+            padding: 20px;
+            text-align: center;
+        }
+
+        #student-list tr:nth-child(even) {
+            background-color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div class="container">
+            <table id="student-list">
+                <tr>
+                    <th>Full name</th>
+                    <th>Age</th>
+                </tr>
+                <tr>
+                    <td>Nguyen Van A</td>
+                    <td>35</td>
+                </tr>
+                <tr>
+                    <td>Nguyen Van B</td>
+                    <td>26</td>
+                </tr>
+                <tr>
+                    <td>Nguyen Van C</td>
+                    <td>46</td>
+                </tr>
+            </table>
+        </div>
+    </main>
+</body>
+</html>
