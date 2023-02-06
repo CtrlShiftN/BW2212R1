@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model</title>
+    <style>
+        .dashed-box{
+            width: 200px;
+            padding: 2em;
+            border: 25px dashed #ce5c5b;
+            background-color: #4cb1ab;
+            margin: 25px;
+        }
+
+        .box-outside{
+            box-shadow: inset 0 0 20px #e7b9b9;
+            width: 80px;
+            margin: auto;
+            padding: 35px;
+            border-radius: 50%;
+        }
+
+        .box-outside .box-inside{
+            box-shadow: inset 0 0 20px #acc7b9;
+            padding: 50px 25px 50px 25px;
+            border-radius: 3px;
+        }
+
+        .rect-outside {
+            margin-top: 5px;
+            padding: 33px 30px;
+            border: 5px black solid;
+            display: inline-block;
+            border-radius: 15px;
+        }
+
+        .rect-outside .rect-left {
+            padding: 30px 60px;
+            border: 5px violet solid;
+            border-radius: 30px;
+            display: inline;
+        }
+        .rect-outside .rect-right {
+            margin-left: -10px;
+            padding: 30px 60px;
+            border: 5px brown solid;
+            display: inline;
+            border-radius: 30px;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div class="container">
+            <!-- Box 01 -->
+            <div class="dashed-box">
+                Content demo box
+            </div>
+            <hr>
+            <!-- Box 02 -->
+            <div class="box-outside">
+                <div class="box-inside"></div>
+            </div>
+            <hr>
+            <!-- Box 3 -->
+            <div class="rect-outside">
+                <div class="rect-left"></div>
+                <div class="rect-right"></div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
