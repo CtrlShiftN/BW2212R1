@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Block and Inline</title>
+    <style>
+        .bg-red {
+            background-color: red;
+        }
+
+        .bg-blue {
+            background-color: blue;
+        }
+
+        .d-block {
+            display: block;
+        }
+
+        .d-inline {
+            display: inline;
+        }
+
+        .d-inline-block{
+            display: inline-block;
+            height: 50px;
+            width: 100px;
+        }
+
+        .d-none {
+            display: none;
+        }
+
+        .v-none {
+            visibility: hidden;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div class="bg-red">
+            <h1>Hello world! 1</h1>
+            <h1 class="d-inline">Hello world! 2</h1>
+            <h1 class="d-inline">Hello world! 3</h1>
+            <h1>Hello world! 4</h1>
+        </div>
+        <div class="bg-blue">
+            <span class="d-block">Hello1</span>
+            <span>Hello1</span>
+            <span>Hello1</span>
+            <span>Hello1</span>
+            <span class="d-block">Hello1</span>
+            <span>Hello1</span>
+            <span>Hello1</span>
+            <span>Hello1</span>
+        </div>
+        <hr>
+        <div class="bg-red">
+            <span class="d-inline-block">Hello1 1</span>
+            <span>Hello1 2</span>
+            <span class="d-none">Hello1 3</span>
+            <span class="v-none">Hello1 4</span>
+            <span class="d-inline-block">Hello1 5</span>
+            <span>Hello1 6</span>
+            <span>Hello1 7</span>
+            <span>Hello1 8</span>
+        </div>
+    </main>
+</body>
+</html>
