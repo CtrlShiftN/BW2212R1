@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Horizontal Menu</title>
+        <style>
+            nav ul li {
+                display: inline;
+            }
+            nav ul li a {
+                text-decoration: none;
+                color: #ffffff;
+                font-weight: 500;
+                padding: 0 20px;
+            }
+            .bg-black {
+                background-color: #000000;
+            }
+            nav {
+                position: fixed;
+                top: 0;
+            }
+            nav ul li:hover {
+                background-color: red;
+            }
+            .my-0 {
+                margin-top: 0;
+                margin-bottom: 0;
+            }
+            .sub-menu {
+                background-color: #000000;
+                position: absolute;
+                top: 1em;
+                left: 0;
+                display: none;
+            }
+            nav ul li:hover .sub-menu{
+                display: block;
+            }
+            ul {
+                padding-left: 0;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <header>
+                <nav class="bg-black">
+                    <ul class="my-0">
+                        <li><a href="#home">Home</a>
+                            <ul class="sub-menu">
+                                <li><a href="#home">Home 1</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#news">News</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="#about">About</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <main>
+                <section></section>
+            </main>
+            <footer></footer>
+        </div>
+    </body>
+</html>
