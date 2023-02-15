@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <style>
+            header,
+            footer {
+                background-color: #e5e5e5;
+                color: #aaaaaa;
+                text-align: center;
+            }
+            header h1 {
+                padding: 20px 0;
+                margin: 0;
+                margin-bottom: 5px;
+            }
+            .right-sidebar li a {
+                color: black;
+            }
+            .right-sidebar {
+                list-style-type: none;
+                padding-left: 0;
+                margin: 0;
+            }
+            .right-sidebar li {
+                background-color: #e5e5e5;
+                padding: 10px 0;
+                margin-bottom: 5px;
+            }
+            .text-muted {
+                color: #aaaaaa;
+            }
+            footer p {
+                padding: 5px 0;
+            }
+            .text-center {
+                text-align: center;
+            }
+            .bg-grey {
+                background-color: #e5e5e5;
+            }
+            .px-3 {
+                padding-left: 10px;
+                padding-right: 10px;
+            }
+            @media only screen and (max-width: 575px) {
+                .col-12 {
+                    width: 100%;
+                }
+            }
+            @media only screen and (min-width: 576px) {
+                .col-md-2 {
+                    width: 15%;
+                    display: inline-block;
+                }
+                .col-md-8 {
+                    width: 62%;
+                    display: inline-block;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <header>
+                <h1 class="text-muted">Hello World</h1>
+            </header>
+            <main>
+                <div class="row">
+                    <div class="col-12 col-md-2 px-3">
+                        <ul class="right-sidebar">
+                            <li class="text-center"><a href="#">Link 1</a></li>
+                            <li class="text-center"><a href="#">Link 2</a></li>
+                            <li class="text-center"><a href="#">Link 3</a></li>
+                            <li class="text-center"><a href="#">Link 4</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-12 col-md-8 text-muted px-3">
+                        <h1>Lorum Ipsum</h1>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing
+                            elit. Fusce et orci sit amet enim finibus placerat
+                            at quis metus. Sed tortor purus, dignissim sit amet
+                            ultrices non, vehicula vitae lorem. Quisque iaculis
+                            mi feugiat mauris imperdiet, feugiat aliquet dolor
+                            tempus. Cras posuere tellus et ex pretium lacinia.
+                            Sed gravida dui eu nunc auctor venenatis.
+                        </p>
+                    </div>
+                    <div class="col-12 col-md-2 bg-grey text-center px-3">
+                        <h1 class="text-muted">About</h1>
+                        <p class="text-muted">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing
+                            elit
+                        </p>
+                    </div>
+                </div>
+            </main>
+            <footer>
+                <p>&copy; copyright w3schools.com</p>
+            </footer>
+        </div>
+    </body>
+</html>
