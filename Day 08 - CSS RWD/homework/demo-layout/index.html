@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport"
+	      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>RWD Layout demo</title>
+	<style>
+        .row {
+            display: table;
+            clear: both;
+            width: 100%;
+        }
+        @media only screen and (max-width: 767px) {
+            .col-12 {
+                float: left;
+                width: 100%;
+            }
+	        .nav-right {
+		        display: none;
+	        }
+        }
+        @media only screen and (min-width: 768px) {
+            .col-md-8 {
+                float: left;
+                width: 66.66%;
+            }
+            .col-md-4 {
+                float: left;
+                width: 33.33%;
+            }
+            .col-md-7 {
+                float: left;
+                width: 58.33%;
+            }
+            .col-md-5 {
+                float: left;
+                width: 41.66%;
+            }
+            .col-md-2 {
+	            width: 16.66%;
+	            float: left;
+            }
+            .col-md-10 {
+	            width: 83.33%;
+	            float: left;
+            }
+            .content {
+	            height: 85vh;
+            }
+        }
+        @media only screen and (min-width: 992px) {
+            .col-lg-6 {
+                float: left;
+                width: 50%;
+            }
+            .content {
+                height: 85vh;
+            }
+            .col-lg-8 {
+                float: left;
+                width: 66%;
+            }
+	        .col-lg-2 {
+		        width: 16%;
+		        float: left;
+	        }
+        }
+        html, body {
+	        margin: 0;
+        }
+        .menu, .sidebar-link {
+            list-style-type: none;
+	        margin-top: 0;
+	        margin-bottom: 0;
+	        padding-left: 0;
+	        margin-left: 10px;
+        }
+        .sidebar-link, .right-sidebar {
+	        text-align: center;
+	        padding-top: 30px;
+	        padding-bottom: 30px;
+        }
+        .menu li a {
+	        text-decoration: none;
+	        color: white;
+        }
+        .sidebar-link li a {
+	        text-decoration: none;
+        }
+        .sidebar-link li {
+	        margin-bottom: 10px;
+        }
+        .menu li {
+	        display: inline;
+	        margin-right: 15px;
+        }
+        header, footer {
+	        background-color: black;
+	        line-height: 40px;
+	        padding-left: 40px;
+	        padding-right: 40px;
+        }
+        footer {
+	        text-align: center;
+	        color: white;
+        }
+        .bg-secondary {
+	        background-color: #aaaaaa;
+        }
+        .right-sidebar button {
+	        padding: 20px 30px;
+	        display: block;
+	        margin-bottom: 10px;
+	        width: 80%;
+	        margin-left: auto;
+	        margin-right: auto;
+        }
+        .content {
+	        padding-left: 10px;
+	        padding-right: 10px;
+	        background-color: white;
+        }
+        .nav-right {
+	        text-align: end;
+        }
+	</style>
+</head>
+<body>
+<div class="container-fluid">
+	<header>
+		<nav>
+			<div class="row">
+				<div class="col-12 col-md-10 nav-left">
+					<ul class="menu">
+						<li><a href="#">Logo</a></li>
+						<li><a href="#">Home</a></li>
+						<li><a href="#">About</a></li>
+						<li><a href="#">Projects</a></li>
+						<li><a href="#">Contact</a></li>
+					</ul>
+				</div>
+				<div class="col-12 col-md-2 nav-right">
+					<a href="#">Login</a>
+				</div>
+			</div>
+		</nav>
+	</header>
+	<main>
+		<div class="row bg-secondary">
+			<div class="col-12 col-lg-2 left-sidebar">
+				<ul class="sidebar-link">
+					<li><a href="#">Link</a></li>
+					<li><a href="#">Link</a></li>
+					<li><a href="#">Link</a></li>
+				</ul>
+			</div>
+			<div class="col-12 col-lg-8 content">
+				<h1>Welcome</h1>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent auctor convallis tellus, et euismod dui imperdiet in. Sed accumsan rutrum metus sit amet rhoncus. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. In at hendrerit augue, non pellentesque ipsum. Sed quis arcu nec mauris lacinia blandit quis vel ex. Praesent in tellus ante. Pellentesque condimentum tempor purus, vel consectetur arcu. Cras mattis, velit vel faucibus aliquet, velit ante varius urna, nec euismod velit purus et turpis. In rutrum metus a dui molestie, vitae molestie erat lobortis. Vivamus volutpat libero dui, non placerat justo sagittis efficitur. Phasellus et velit ac ex vulputate hendrerit ut non odio.</p>
+				<hr>
+				<h1>Test</h1>
+				<p>Lorem ipsum</p>
+			</div>
+			<div class="col-12 col-lg-2 right-sidebar">
+				<button>ADS</button>
+				<button>ADS</button>
+			</div>
+		</div>
+	</main>
+	<footer>
+		<h3>Footer Text</h3>
+	</footer>
+</div>
+</body>
+</html>
