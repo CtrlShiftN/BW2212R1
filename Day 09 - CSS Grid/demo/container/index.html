@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport"
+	      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>CSS Grid Container</title>
+	<style>
+		.grid-container {
+			background-color: greenyellow;
+			display: grid;
+			/*grid-template-columns: auto auto auto;*/
+			/*grid-template-rows: 100px 100px 100px 100px;*/
+			/*justify-content: space-evenly;*/
+			/*align-content: space-between;*/
+			grid-template-areas: 'c1 c1 c1 c1 c1 c1' 'c2 c3 c3 c3 c3 c4' 'c5 c5 c5 c5 c5 c5';
+		}
+		.grid-item {
+			/*background-color: red;*/
+			height: 200px;
+		}
+		/*.grid-item:nth-child(1) {*/
+		/*	grid-column: 1/5;*/
+		/*	grid-row: 1/4;*/
+		/*}*/
+		.cell-1 {
+			grid-area: c1;
+			background-color: greenyellow;
+		}
+        .cell-2 {
+            grid-area: c2;
+	        background-color: blue;
+        }
+        .cell-3 {
+            grid-area: c3;
+	        background-color: white;
+        }
+        .cell-4 {
+            grid-area: c4;
+	        background-color: aqua;
+        }
+        .cell-5 {
+            grid-area: c5;
+	        background-color: brown;
+        }
+
+	</style>
+</head>
+<body>
+<header></header>
+<main>
+	<div class="grid-container">
+		<div class="grid-item cell-1">1</div>
+		<div class="grid-item cell-2">2</div>
+		<div class="grid-item cell-3">3</div>
+		<div class="grid-item cell-4">4</div>
+		<div class="grid-item cell-5">5</div>
+<!--		<div class="grid-item cell-6">6</div>-->
+<!--		<div class="grid-item cell-7">7</div>-->
+<!--		<div class="grid-item cell-8">8</div>-->
+<!--		<div class="grid-item cell-9">9</div>-->
+	</div>
+</main>
+<footer></footer>
+</body>
+</html>

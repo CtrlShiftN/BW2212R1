@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport"
+	      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Basic Layout Demo</title>
+	<style>
+		#content {
+			display: grid;
+			grid-template-areas: "c1 c1 c1 c1 c1 c1" "c2 c3 c3 c3 c3 c4" "c5 c5 c5 c5 c5 c5";
+		}
+		#content .grid-item:nth-child(1) {
+			background-color: #aaaaaa;
+			grid-area: c1;
+			text-align: center;
+			color: gray;
+		}
+
+        #content .grid-item:nth-child(2) {
+            grid-area: c2;
+        }
+        #content .grid-item:nth-child(3) {
+            grid-area: c3;
+	        padding: 0 20px;
+        }
+        #content .grid-item:nth-child(4) {
+            grid-area: c4;
+	        color: gray;
+	        padding: 0 20px;
+        }
+        #content .grid-item:nth-child(5) {
+            grid-area: c5;
+	        text-align: center;
+	        background-color: #aaaaaa;
+	        color: gray;
+	        padding: 5px 0;
+        }
+        .link-menu {
+	        list-style-type: none;
+	        padding-left: 0;
+        }
+        .link-menu li a{
+	        color: gray;
+	        /*padding: 20px 40px;*/
+        }
+        .link-menu li {
+	        background-color: #aaaaaa;
+	        margin-bottom: 10px;
+	        padding: 1.3em 5em;
+        }
+        .bg-grey {
+	        background-color: #aaaaaa;
+        }
+	</style>
+</head>
+<body>
+<div id="content" class="grid-container">
+	<div class="grid-item">
+		<h2>Hello world</h2>
+	</div>
+	<div class="grid-item">
+		<ul class="link-menu">
+			<li><a href="#">Link</a></li>
+			<li><a href="#">Link</a></li>
+			<li><a href="#">Link</a></li>
+			<li><a href="#">Link</a></li>
+		</ul>
+	</div>
+	<div class="grid-item">
+		<h2>Lorem Ipsum</h2>
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ut dignissim lectus. Sed ornare lorem sapien, at maximus sapien molestie eu. Ut vehicula bibendum risus sit amet cursus. In placerat orci a justo imperdiet, et rhoncus nisi pellentesque</p>
+	</div>
+	<div class="grid-item">
+		<div class="bg-grey">
+			<h2>About</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ut dignissim lectus </p>
+		</div>
+	</div>
+	<div class="grid-item">
+		&copy; Copyright by QuyenNV
+	</div>
+</div>
+</body>
+</html>
