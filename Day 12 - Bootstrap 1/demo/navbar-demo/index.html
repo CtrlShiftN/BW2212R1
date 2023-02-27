@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport"
+	      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Navbar Demo</title>
+	<link rel="stylesheet" href="assets/bootstrap-5.0.2/css/bootstrap.min.css">
+	<script src="assets/bootstrap-5.0.2/js/bootstrap.min.js" crossorigin="anonymous"></script>
+	<style>
+		.bg-red {
+			background-color: red !important;
+		}
+	</style>
+</head>
+<body>
+<div class="container">
+	<header>
+		<nav class="navbar navbar-expand-md navbar-light bg-info">
+			<div class="container-fluid">
+				<button class="btn navbar-toggler btn-info" data-bs-toggle="collapse" data-bs-target="#mainMenu" >
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div id="mainMenu" class="collapse navbar-collapse">
+					<ul class="navbar-nav">
+						<li class="nav-item">
+							<a class="nav-link" href="#">Home</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">Contact</a>
+						</li>
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" id="aboutDropdown" href="#" data-bs-toggle="dropdown">About</a>
+							<ul class="dropdown-menu" aria-labelledby="aboutDropdown">
+								<li>
+									<a class="dropdown-item">About us</a>
+								</li>
+								<li>
+									<a class="dropdown-item">About project</a>
+								</li>
+							</ul>
+						</li>
+
+					</ul>
+				</div>
+			</div>
+		</nav>
+	</header>
+	<main></main>
+	<footer></footer>
+</div>
+</body>
+</html>
