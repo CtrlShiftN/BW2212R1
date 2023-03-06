@@ -1,0 +1,195 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport"
+	      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Tech Store</title>
+	<link rel="stylesheet" href="assets/bootstrap-5.0.2/css/bootstrap.min.css">
+	<link rel="stylesheet" href="assets/font-awesome-4.7.0/css/font-awesome.min.css">
+	<script src="assets/bootstrap-5.0.2/js/bootstrap.min.js"></script>
+	<style>
+        body {
+            font: 12px Arial, sans-serif;
+            color: white;
+        }
+
+        .navbar-dark .navbar-nav .nav-link {
+            color: rgba(255, 255, 255);
+        }
+
+        .bg-blue {
+            background-color: #233b76;
+        }
+
+        .text-light-blue {
+            color: #4b90e2;
+        }
+
+        .bg-light-blue {
+	        background-color: #4b90e2;
+        }
+
+        .fs-14 {
+            font-size: 14px;
+        }
+        .fs-11 {
+	        font-size: 11px;
+        }
+	</style>
+</head>
+<body>
+<div class="container-fluid">
+	<header>
+		<!-- PC display (>= lg) -->
+		<div class="container d-none d-lg-block">
+			<div class="row">
+				<nav class="navbar navbar-expand-lg navbar-dark bg-blue p-0">
+					<div class="container-fluid px-0 ">
+						<div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+							<ul class="navbar-nav">
+								<li class="nav-item">
+									<a class="nav-link" aria-current="page" href="#">Trang chủ</a>
+								</li>
+								<li class="nav-item dropdown">
+									<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink"
+									   role="button" data-bs-toggle="dropdown" aria-expanded="false">
+										Sản phẩm
+									</a>
+									<ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+										<li><a class="dropdown-item" href="#">Tivi</a></li>
+										<li><a class="dropdown-item" href="#">Tủ lạnh</a></li>
+										<li><a class="dropdown-item" href="#">Máy lạnh</a></li>
+									</ul>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="#">Giới thiệu</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="#">Blog</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="#">Đăng nhập / Đăng ký</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</nav>
+			</div>
+			<div class="d-flex flex-row align-items-center justify-content-between">
+				<div class="pe-3 flex-fill"><img src="assets/media/images/logo.png" class="img-fluid"></div>
+				<div class="d-flex mx-3">
+					<div class="flex-shrink-0 pe-2">
+						<i class="fa fa-phone fa-2x text-muted"></i>
+					</div>
+					<div class="flex-grow-1">
+						<p class="text-muted mb-0">Điện thoại</p>
+						<a class="text-decoration-none fw-bolder fs-14" href="tel:19001267">19001267</a>
+					</div>
+				</div>
+				<div class="d-flex mx-3">
+					<div class="flex-shrink-0 pe-2">
+						<i class="fa fa-envelope fa-2x text-muted"></i>
+					</div>
+					<div class="flex-grow-1">
+						<p class="text-muted mb-0">Email</p>
+						<a class="text-decoration-none fw-bolder fs-14" href="mailto:codegym@gmail.com">codegym@gmail.com</a>
+					</div>
+				</div>
+				<div class="d-flex flex-fill">
+					<div class="input-group">
+						<input type="text" class="form-control px-2 py-1" placeholder="Bạn muốn tìm gì?" size="30"
+						       aria-describedby="button-addon2">
+						<button class="btn btn-outline-secondary px-2 py-1">
+							<i class="fa fa-search"></i>
+						</button>
+					</div>
+				</div>
+				<div class="d-flex flex-column align-items-center mx-3">
+					<i class="fa fa-map-marker text-light-blue fa-2x"></i>
+					<p class="text-uppercase text-light-blue mb-0">chi nhánh</p>
+				</div>
+				<div class="d-flex flex-column align-items-center mx-3">
+					<div class="position-relative p-0">
+						<i class="fa fa-shopping-cart fa-2x text-light-blue"></i>
+						 <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-secondary fs-11">0</span>
+					</div>
+					<p class="text-uppercase text-light-blue mb-0">giỏ hàng</p>
+				</div>
+			</div>
+			<div class="row">
+				<nav class="navbar navbar-expand-lg navbar-dark bg-light-blue px-0 py-2">
+					<div class="container-fluid px-0 ">
+						<div class="collapse navbar-collapse justify-content-start" id="itemMenu">
+							<ul class="navbar-nav">
+								<li class="nav-item dropdown">
+									<a class="nav-link dropdown-toggle text-uppercase fs-14" href="#" id="TVsDropdown"
+									   role="button" data-bs-toggle="dropdown" aria-expanded="false">
+										Tivi
+									</a>
+									<ul class="dropdown-menu" aria-labelledby="TVsDropdown">
+										<li><a class="dropdown-item" href="#">Tivi</a></li>
+										<li><a class="dropdown-item" href="#">Tủ lạnh</a></li>
+										<li><a class="dropdown-item" href="#">Máy lạnh</a></li>
+									</ul>
+								</li>
+								<li class="nav-item dropdown">
+									<a class="nav-link dropdown-toggle text-uppercase fs-14" href="#" id="RefDropdown"
+									   role="button" data-bs-toggle="dropdown" aria-expanded="false">
+										tủ lạnh
+									</a>
+									<ul class="dropdown-menu" aria-labelledby="refDropdown">
+										<li><a class="dropdown-item" href="#">Tivi</a></li>
+										<li><a class="dropdown-item" href="#">Tủ lạnh</a></li>
+										<li><a class="dropdown-item" href="#">Máy lạnh</a></li>
+									</ul>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="#">Giới thiệu</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="#">Blog</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="#">Đăng nhập / Đăng ký</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</nav>
+			</div>
+		</div>
+		<!-- Mobile display (<= md) -->
+		<div class="container d-lg-none">
+			<div class="d-flex flex-row align-items-center">
+				<button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">
+					<i class="fa fa-bars"></i>
+				</button>
+				<div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
+					<div class="offcanvas-header">
+						<h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">Backdroped with scrolling</h5>
+						<button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+					</div>
+					<div class="offcanvas-body">
+						<p>Try scrolling the rest of the page to see this option in action.</p>
+					</div>
+				</div>
+				<div class="pe-3"><img src="assets/media/images/logo.png" class="img-fluid"></div>
+				<div class="d-flex flex-column align-items-center mx-3">
+					<i class="fa fa-map-marker text-light-blue fa-2x"></i>
+				</div>
+				<div class="d-flex flex-column align-items-center mx-3">
+					<div class="position-relative p-0">
+						<i class="fa fa-shopping-cart fa-2x text-light-blue"></i>
+						<span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-secondary fs-11">0</span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+	<main></main>
+	<footer></footer>
+</div>
+</body>
+</html>
