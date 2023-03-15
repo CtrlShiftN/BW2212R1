@@ -1,0 +1,42 @@
+@import "utilities/variables";
+
+* {
+  box-sizing: $boxSizing;
+}
+
+$heightArr: 90px, 230px, 50px, 370px;
+$i: 1;
+@each $height in $heightArr {
+  $i: $i + 1;
+  .gridwrapper:nth-child(#{$i}) {
+	height: $height;
+  }
+}
+
+.wrapper {
+  position: absolute;
+  opacity: 0.9;
+  width: auto;
+  left: 8px;
+  right: 10px;
+
+  .gridwrapper {
+	overflow: $overflowAuto;
+	position: $positionRelative;
+	height: $height250;
+
+	.gridcontent {
+	  width: $width;
+	  margin: $marginNone;
+	  border-right: $borderRight;
+	  height: $height100Percent;
+	  float: $floatLeft;
+	  background-color: $bgWhite;
+	}
+  }
+
+  .gridcontainer:nth-child(2n) {
+	opacity: 0.1;
+  }
+}
+

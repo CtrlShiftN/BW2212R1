@@ -1,0 +1,45 @@
+* {
+  box-sizing: border-box;
+}
+
+.gridwrapper:nth-child(2) {
+  height: 90px;
+}
+
+.gridwrapper:nth-child(3) {
+  height: 230px;
+}
+
+.gridwrapper:nth-child(4) {
+  height: 50px;
+}
+
+.gridwrapper:nth-child(5) {
+  height: 370px;
+}
+
+.wrapper {
+  position: absolute;
+  opacity: 0.9;
+  width: auto;
+  left: 8px;
+  right: 10px;
+}
+.wrapper .gridwrapper {
+  overflow: auto;
+  position: relative;
+  height: 250px;
+}
+.wrapper .gridwrapper .gridcontent {
+  width: 8.33%;
+  margin: 0;
+  border-right: 1px solid grey;
+  height: 100%;
+  float: left;
+  background-color: #f1f1f1;
+}
+.wrapper .gridcontainer:nth-child(2) {
+  opacity: 0.1;
+}
+
+/*# sourceMappingURL=style.css.map */
